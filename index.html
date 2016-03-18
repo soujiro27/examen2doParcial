@@ -3,12 +3,19 @@
 <head>
   <meta charset="UTF-8"/>
   <title>Tienda Online</title>
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/estilo.css"/>
+  <script src="js/jquery.js"></script>
+  <script src="js/libros.js"></script>
 </head>
 <body>
   <header><img src="img/logo.svg" alt="logo"/>
     <div class="titulos">
       <h1>Ebooks</h1>
       <h2>Tienda de libros Digitales</h2>
+    </div>
+    <div class="clickMenu">
+      <p>M</p>
     </div>
     <div class="menu">
       <nav>
@@ -23,7 +30,15 @@
     </div>
   </header>
   <main>
-    <section class="principal"></section>
+    <section class="principal">
+      <select>
+        <option value="0">Escoga Opcion</option>
+        <option value="1">Javascript</option>
+        <option value="2">Python</option>
+        <option value="3">Nodejs</option>
+        <option value="4">ccs</option>
+      </select>
+    </section>
     <section class="javascript"></section>
     <section class="python"></section>
     <section class="nodejs"></section>

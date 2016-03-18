@@ -1,0 +1,62 @@
+header {
+  background: #303f9f;
+  color: #fff;
+  position: relative;
+}
+header img {
+  width: 15%;
+  display: inline-block;
+}
+header div.titulos {
+  text-align: center;
+  width: 82%;
+  display: inline-block;
+  vertical-align: top;
+}
+header nav {
+  display: none;
+}
+header nav li {
+  list-style: none;
+  padding: 1%;
+}
+header div.clickMenu {
+  display: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ffc107;
+  text-align: center;
+  position: absolute;
+  right: 20px;
+  bottom: -35px;
+  color: #3f51b5;
+}
+header div.clickMenu p {
+  margin-top: 25px;
+  font-weight: bold;
+}
+main select {
+  margin: 10% auto;
+  display: block;
+  padding: 0.5%;
+  background: #3f51b5;
+  color: #fff;
+  border: none;
+  width: 20%;
+  border-radius: 5px;
+}
+main select:focus {
+  background: #26bce0;
+  color: #303f9f;
+}
+footer {
+  background: #3f51b5;
+  text-align: center;
+  color: #fff;
+  padding: 1%;
+}
+footer h2,
+footer h3 {
+  margin: 1%;
+}
