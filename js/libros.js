@@ -12,6 +12,7 @@ var python={
 $(function (){
 
 	$('select').on('change',inicio);
+    $('div.clickMenu').on('click',muestraMenu);
 });
 
 function inicio()
@@ -42,7 +43,19 @@ function pinta(numero)
 			num++;
 		$('section.producto').append(html);
 	}
-
-
+$('section.principal').hide('slow');
+$('div.clickMenu').show('slow');
 
 }
+
+function muestraMenu()
+{
+    $('nav').toggle('slow');
+}
+
+
+
+
+
+
+
