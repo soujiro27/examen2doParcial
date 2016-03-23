@@ -45,15 +45,28 @@ function pinta(numero)
 	}
 $('section.principal').hide('slow');
 $('div.clickMenu').show('slow');
+$('section.producto button').on('click',compra);
 
 }
 
 function muestraMenu()
 {
+    $('div.clickMenu').addClass('rotar');
     $('nav').toggle('slow');
+    
 }
 
+function compra()
+{
+	
+	var cantidad=$(this).parent().children()[3].value;
+	cantidad=parseInt(cantidad);
+	var nombre=$(this).parent().children()[1].textContent;
+	var precio=parseInt($(this).parent().children()[2].textContent);
+	var fila='<tr> <td>'+nombre+'</td><td>'+cantidad+'</td><td>'+precio+'</td><td>'+precio*cantidad+'</td><td><img src=img/trash.png></td></tr>';
 
+	$('section.carrito table')append(fila);
+}
 
 
 

@@ -36,6 +36,10 @@ header div.clickMenu p {
   margin-top: 25px;
   font-weight: bold;
 }
+.rotar {
+  transform: rotate(180deg);
+  transition: all 1s;
+}
 main select {
   margin: 10% auto;
   display: block;
@@ -49,6 +53,34 @@ main select {
 main select:focus {
   background: #26bce0;
   color: #303f9f;
+}
+main section.producto {
+  text-align: center;
+}
+main section.producto article {
+  width: 30%;
+  margin: 2% 1%;
+  display: inline-block;
+}
+main section.producto article img {
+  width: 90%;
+  display: block;
+  margin: 1% auto;
+}
+main section.producto article input[type=number] {
+  width: 20%;
+  padding: 1%;
+  border: 1px solid #26bce0;
+  margin: 4% auto;
+  display: block;
+}
+main section.producto article button {
+  padding: 1.5%;
+  border: none;
+  background: #ff260f;
+  color: #fff;
+  width: 25%;
+  border-radius: 5px;
 }
 footer {
   background: #3f51b5;
