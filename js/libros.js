@@ -8,6 +8,7 @@ var python={
 	precios:[500,600,700,800]
 }
 
+var total=0;
 
 $(function (){
 
@@ -65,7 +66,15 @@ function compra()
 	var precio=parseInt($(this).parent().children()[2].textContent);
 	var fila='<tr> <td>'+nombre+'</td><td>'+cantidad+'</td><td>'+precio+'</td><td>'+precio*cantidad+'</td><td><img src=img/trash.png></td></tr>';
 
-	$('section.carrito table')append(fila);
+total=total+(precio*cantidad);
+
+	$('section.carrito table').append(fila);
+$('table tr td img').on('click',elimina);
+}
+
+function elimina()
+{
+	$(this).parent().parent().hide('slow');
 }
 
 

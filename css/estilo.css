@@ -82,6 +82,23 @@ main section.producto article button {
   width: 25%;
   border-radius: 5px;
 }
+main section.carrito table tr {
+  text-align: center;
+}
+main section.carrito table tr:nth-child(even) {
+  background: #26bce0;
+  color: #fff;
+}
+main section.carrito table tr td {
+  width: 10%;
+  padding: 1%;
+  margin: 1%;
+}
+main section.carrito table tr td img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
 footer {
   background: #3f51b5;
   text-align: center;
