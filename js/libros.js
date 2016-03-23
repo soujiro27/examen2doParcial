@@ -68,13 +68,21 @@ function compra()
 
 total=total+(precio*cantidad);
 
-	$('section.carrito table').append(fila);
+$('section.carrito table').append(fila);
+
+$('section.carrito div.total h2').text(total);
+
 $('table tr td img').on('click',elimina);
 }
 
 function elimina()
 {
 	$(this).parent().parent().hide('slow');
+	var resta=$(this).parent().parent().children()[3].textContent;
+	resta=parseInt(resta);
+	total=total-resta;
+	console.log('lo que hay en total: '+total);
+	$('section.carrito div.total h2').text(total);
 }
 
 
